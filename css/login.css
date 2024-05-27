@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* 지우기 */
+/* 폰트 */
+@font-face {
+  font-family: "UhBeeSe_hyun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KBO-Dia-Gothic_light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_light.woff") format("woff");
+}
+@font-face {
+  font-family: "KBO-Dia-Gothic_medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_medium.woff") format("woff");
+}
+@font-face {
+  font-family: "KBO-Dia-Gothic_bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff") format("woff");
+}
+/* 공통 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font-family: "KBO-Dia-Gothic_light", sans-serif;
+  font-size: 16px;
+  /* padding: 25px; */
+  background-color: #ffff;
+  color: #333;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 테두리 강조 스타일 */
+.focused {
+  outline: none; /* 포커스 테두리 제거 */
+  border: 2px solid #134aa9;
+}
+.error {
+  display: block;
+  height: 10px;
+  color: red;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.logingform h1 {
+  font-size: 3vw;
+  margin-bottom: 3%;
+
+  margin-top: 10%;
+}
+.login {
+  padding-top: 3%;
+  padding-bottom: 5%;
+  margin: 0 auto;
+}
+
+.check {
+  padding: 20px;
+  font-size: 15px;
+  display: flex;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+}
+
+form > input {
+  padding-left: 2%;
+  display: block;
+  width: 22%;
+  height: 50px;
+  text-align: left;
+  border-radius: 7px;
+  margin: 0 auto;
+
+  margin-top: 10px;
+  border: 1px solid #134aa9;
+}
+
+form .loginbutton {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  width: 22%;
+  border-radius: 7px;
+  background-color: #134aa9;
+  cursor: pointer;
+  border: none;
+}
+form .joinbutton {
+  margin-top: 20px;
+  width: 22%;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: #134aa9;
+  cursor: pointer;
+  border: none;
+}
+form .loginbutton a {
+  color: #fff;
+  font-size: 16px;
+}
+form .joinbutton a {
+  color: #fff;
+  font-size: 16px;
+}
+.icon {
+  padding: 20px;
+}
+
+.icon img {
+  width: 50px;
+  margin: 20px;
+}
+@media screen and (max-width: 768px) {
+  form > input {
+    width: 40%;
+  }
+  .logingform h1 {
+    font-size: 5vw;
+    margin-bottom: 6%;
+  }
+  form .loginbutton {
+    width: 40%;
+  }
+  form .joinbutton {
+    width: 40%;
+  }
+  .icon {
+    padding: 20px;
+  }
+
+  .icon img {
+    width: 50px;
+    margin: 20px;
+  }
+  footer {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logingform h1 {
+    font-size: 8vw;
+    margin-bottom: 10%;
+  }
+  .login {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+  }
+  form .loginbutton {
+    width: 60%;
+  }
+  form .joinbutton {
+    width: 60%;
+  }
+  form > input {
+    width: 60%;
+  }
+}
+footer {
+  height: 400px;
+}
+
+@media screen and (max-width: 320px) {
+  .logingform h1 {
+    font-size: 10vw;
+    margin-bottom: 15%;
+  }
+  .login {
+    padding-top: 30%;
+    margin: 0 auto;
+  }
+  form .loginbutton {
+    width: 60%;
+  }
+  form .joinbutton {
+    width: 60%;
+  }
+  form > input {
+    width: 60%;
+  }
+  .icon {
+    padding: 20px;
+  }
+
+  .icon img {
+    width: 40px;
+    margin: 10px;
+  }
+  .error {
+    font-size: 10px;
+  }
+  .check {
+    padding: 15px;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,531 @@
+@charset "utf-8";
+/* flying baneer */
+/* 신청하기 버튼 */
+body {
+  position: relative;
+}
+.pop-button {
+  position: absolute;
+  width: 80px;
+  position: fixed;
+  right: 10px;
+  bottom: 75%;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pop-button a {
+  width: 100%;
+}
+.pop-button .chat-btn img {
+  width: 100%;
+}
+.pop-button .chat-btn {
+  animation: updown 1.5s infinite;
+  -webkit-animation: updown 1.5s infinite;
+  /* 다른 브라우저에서도 작동 될 수 있게 하기 위해 -webkit을 사용. */
+}
+.top-button {
+  position: relative;
+  z-index: 999999;
+  display: block;
+}
+.top-button .top-btn {
+  display: block;
+  position: fixed;
+  bottom: 68%;
+  right: 20px;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 50%;
+  width: 60px;
+  line-height: 55px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.top-button .top-btn img {
+  width: 100%;
+}
+.top-button .top-btn img {
+  transform: rotate(180deg);
+}
+.top-button .top-btn img.up {
+  transform: rotate(0deg);
+}
+/* 애내메이션 효과 */
+@keyframes updown {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10%);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+/* =============================================== */
+/* 민주 */
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.section4 {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section4 .snstext {
+  display: none;
+}
+.section4 h1 {
+  margin-bottom: 3%;
+  color: #333;
+  display: block;
+  font-size: 2vw;
+  font-weight: 800;
+}
+.nanum-sns .snsnanum {
+  display: none;
+}
+.section6 {
+  display: none;
+  margin: 0 auto;
+}
+.section6 img {
+  width: 100%;
+}
+.section7{
+  display: block;
+}
+/* ===================================================== */
+/* 푸터 */
+footer {
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  background-color: #333;
+  color: #fff;
+  clear: both;
+}
+footer .right {
+  float: left;
+  margin: 1%;
+  padding: 20px;
+}
+footer .right h1 {
+  padding: 20px;
+
+  font-family: "UhBeeSe_hyun";
+  font-size: 3vw;
+  text-align: left;
+  color: #fff;
+}
+footer .right h1 span {
+  font-family: "UhBeeSe_hyun";
+  font-size: 3vw;
+  text-align: left;
+  color: #ffffff79;
+}
+
+footer .right p {
+  line-height: 1.5;
+  text-align: left;
+  font-family: "KBO-Dia-Gothic_light";
+  letter-spacing: 1px;
+}
+footer .left {
+  float: right;
+  margin: 30px;
+  margin-top: 5%;
+}
+footer .left img {
+  width: 20%;
+}
+
+footer .left .tell {
+  display: block;
+  font-size: 3vw;
+  text-align: right;
+  font-family: "KBO-Dia-Gothic_medium";
+}
+footer .left button {
+  font-size: 16px;
+  width: 130px;
+  height: 50px;
+  margin: 20px 5px;
+  background-color: #333;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "KBO-Dia-Gothic_light";
+  letter-spacing: 1px;
+  border-radius: 7px;
+}
+/* =================================================== */
+/* 신청하기 하단 */
+#bt-menu {
+  width: 100%;
+  position: fixed;
+  bottom: -50px;
+  transition: bottom 0.3s ease-in-out;
+  display: none;
+}
+.takejoin .heart {
+  width: 100%;
+  height: 50px;
+  background-color: #134aa9;
+  color: #fff;
+  border: none;
+  font-size: 5vw;
+  display: none;
+  font-family: "KBO-Dia-Gothic_light";
+}
+/* =================================================== */
+/* 반응형 */
+@media screen and (max-width: 1300px) {
+  .section4 .nanumsns-swiper {
+    display: block;
+  }
+  .section4 .snstext {
+    display: none;
+    padding-top: 15%;
+  }
+  .section4 h1 {
+    font-size: 3vw;
+  }
+  footer .left img {
+    width: 15%;
+  }
+  footer .left button {
+    font-size: 16px;
+  } 
+  .section6{
+    display: block;
+  } 
+  .section6 img{
+    width: 100%;
+  }
+   .section7{
+    display: none;
+  }
+}
+/* ===================================================== */
+@media screen and (max-width: 859px) {
+ 
+
+  .section4 .snstext {
+    display: none;
+  }
+  .section4 h1 {
+    font-size: 4vw;
+    font-weight: 800;
+    margin-bottom: 10%;
+  }
+  footer {
+    height: 460px;
+    width: 100%;
+  }
+  footer .right {
+    margin: 3%;
+    margin-top: 1%;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    padding: 20px;
+  }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    color: #ffffff79;
+  }
+  footer .left {
+    float: left;
+    margin: 8%;
+  }
+
+  footer .left .tell {
+    margin-top: -20%;
+    display: block;
+    font-size: 5vw;
+    text-align: left;
+    font-family: "KBO-Dia-Gothic_medium";
+  }
+  footer .left button {
+    width: 130px;
+    height: 50px;
+    margin: 20px 5px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: "KBO-Dia-Gothic_light";
+    letter-spacing: 1px;
+    border-radius: 7px;
+  }
+  footer .right p {
+    line-height: 1.5;
+    text-align: left;
+    font-family: "KBO-Dia-Gothic_light";
+    letter-spacing: 1px;
+  }
+}
+
+/* ===================================================== */
+@media screen and (max-width: 768px) {
+  .section4 .snstext {
+    display: block;
+    width: 100%;
+  }
+  .section4 h1 {
+    font-size: 5vw;
+    font-weight: 800;
+    margin-bottom: -13%;
+  }
+  .section4 .snstext a img {
+    width: 13%;
+  }
+  .section4 .nanumsns-swiper {
+    display: none;
+  }
+
+  .nanum-sns .snsnanum {
+    display: block;
+    margin-top: -5%;
+  }
+  .snsnanum {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+  .snsnanum img {
+    width: 40%;
+    padding: 2%;
+    border-radius: 10%;
+  }
+
+  footer {
+    height: 450px;
+    width: 100%;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    padding: 20px;
+  }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    color: #ffffff79;
+  }
+  footer .left {
+    float: left;
+    margin: 8%;
+    margin-top: 10%;
+  }
+  footer .left .tell {
+    display: block;
+    font-size: 5vw;
+    text-align: left;
+    font-family: "KBO-Dia-Gothic_medium";
+  }
+
+  footer .left button {
+    width: 130px;
+    height: 50px;
+    margin: 20px 5px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 7px;
+    font-family: "KBO-Dia-Gothic_light";
+    letter-spacing: 1px;
+  }
+  footer .right p {
+    line-height: 1.5;
+    text-align: left;
+    font-family: "KBO-Dia-Gothic_light";
+    letter-spacing: 1px;
+  }
+}
+/* ==================================================== */
+@media screen and (max-width: 480px) {
+  .pop-button,
+  .top-button {
+    display: none;
+  }
+  .section4 h1 {
+    font-size: 6vw;
+    font-weight: 800;
+  }
+  .section4 .snstext img {
+    width: 5%;
+  }
+  .snsnanum img {
+    border-radius: 10%;
+  }
+  .nanum-sns {
+    margin-top: -15%;
+  }
+  .takejoin .heart {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #134aa9;
+    color: #fff;
+    border: none;
+    font-size: 5vw;
+    font-family: "KBO-Dia-Gothic_light";
+  }
+  #bt-menu {
+    display: block;
+  }
+  .takejoin .heart {
+    display: block;
+  }
+  footer {
+    height: 460px;
+    width: 100%;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 8vw;
+    text-align: center;
+  }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 8vw;
+    text-align: left;
+    color: #ffffff79;
+  }
+
+  footer .right p {
+    margin-top: 5%;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: "KBO-Dia-Gothic_light";
+    color: #bbbbbb;
+    font-size: 13px;
+  }
+  footer .left {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  footer .left .tell {
+    margin-top: 5%;
+    font-size: 6vw;
+    color: #bbb;
+    text-align: center;
+    font-family: "KBO-Dia-Gothic_medium";
+  }
+  footer .left img {
+    width: 6%;
+    filter: brightness(0.7);
+  }
+  footer .left button {
+    border-radius: 7px;
+    width: 130px;
+    height: 50px;
+    margin: 30px 5px;
+    background-color: #333;
+    border: 1px solid #bbbbbb;
+    color: #bbb;
+    font-family: "KBO-Dia-Gothic_light";
+    font-size: 13px;
+  }
+}
+/* ==================================================== */
+@media screen and (max-width: 320px) {
+  .section4 {
+    width: 100%;
+    height: 100px;
+  }
+  .section4 h1 {
+    font-size: 7vw;
+    font-weight: 800;
+  }
+  .section4 .snstext a img {
+    padding-top: -2%;
+    width: 15%;
+  }
+  .nanum-sns {
+    margin-top: -35%;
+    display: block;
+  }
+  .snsnanum {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+  }
+  .snsnanum img {
+    width: 50%;
+    padding: 2%;
+    border-radius: 10%;
+  }
+
+  footer {
+    width: 100%;
+    height: 420px;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 8vw;
+    text-align: center;
+  }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 8vw;
+    text-align: left;
+    color: #ffffff79;
+  }
+
+  footer .right p {
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: "KBO-Dia-Gothic_light";
+    color: #bbbbbb;
+    font-size: 13px;
+  }
+  footer .left {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  footer .left .tell {
+    font-size: 6vw;
+    color: #bbb;
+    text-align: center;
+    font-family: "KBO-Dia-Gothic_medium";
+  }
+  footer .left img {
+    width: 6%;
+    filter: brightness(0.7);
+  }
+  footer .left button {
+    border-radius: 7px;
+    width: 100px;
+    height: 50px;
+    margin: 20px 5px;
+    background-color: #333;
+    border: 1px solid #bbbbbb;
+    color: #bbb;
+    font-family: "KBO-Dia-Gothic_light";
+    font-size: 13px;
+  }
+}
